@@ -13,12 +13,12 @@ document.querySelector("ELEMENT").addEventListener("EVENT",function(){
 
 // Problem 1
 document.addEventListen('DOMContentLoaded', function(){
-  console.log("Your Favorite Restaurant"); 
+  console.log("Frita Batidos"); 
 }); 
 
 // Problem 2
 document.querySelector('h1').addEventListener('click', function(){ 
-  this.style.color = 'blue'; 
+  this.style.color = '#6061FF'; 
   this.style.fontSize = '50px';
 }); 
 
