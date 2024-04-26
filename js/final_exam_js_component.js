@@ -32,17 +32,20 @@ document.querySelector('h1').addEventListener('click', function(){
 
 
 // Problem 4
-document.getElementById('styleAll').addEventListener('click', function(){
-  document.querySelector('.container').classList.add('style_all'); 
-}); 
+document.querySelector('button').addEventListener('click', function() {
+    document.querySelector('.container').classList.add('style_all');
+});
 
 
 // Problem 5
-
+const images = document.querySelectorAll('figure img');
+if (images.length >= 4) {  
+    images[3].setAttribute('alt', 'two espresso cups'); 
+}
 
 // Problem 6
 document.querySelectoorAll('img').forEach(img => {
   img.addEventListener('dblclick', function(){ 
-    console.loog(this.alt); 
+    console.log(this.alt); 
   }); 
 }); 
