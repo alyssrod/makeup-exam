@@ -32,11 +32,17 @@ document.querySelector('h1').addEventListener('click', function(){
 
 
 // Problem 4
-
+document.getElementById('styleAll').addEventListener('click', function(){
+  document.querySelector('.container').classList.add('style_all'); 
+}); 
 
 
 // Problem 5
 
 
 // Problem 6
-
+document.querySelectoorAll('img').forEach(img => {
+  img.addEventListener('dblclick', function(){ 
+    console.loog(this.alt); 
+  }); 
+}); 
