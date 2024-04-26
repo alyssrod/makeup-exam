@@ -18,22 +18,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
 // Problem 2
 document.querySelector('h1').addEventListener('click', function(){ 
-  this.style.color = '#6061FF'; 
+  this.style.color = '#0000ff'; 
   this.style.fontSize = '50px';
 }); 
 
 // Problem 3
 // Part 1
-const firstFigureCaption = document.querySelector('figure figcaption');
-firstFigureCaption.addEventListener('mouseover', function() {
-    this.style.border = 'thick solid blue';
-});
+
 
 // Problem 3
 // Part 2
-firstFigureCaption.addEventListener('mouseout', function() {
-    this.style.border = 'none';
-});
+
 
 
 // Problem 4
