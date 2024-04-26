@@ -12,7 +12,7 @@ document.querySelector("ELEMENT").addEventListener("EVENT",function(){
 
 
 // Problem 1
-document.addEventListen('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
   console.log("Frita Batidos"); 
 }); 
 
@@ -44,7 +44,7 @@ if (images.length >= 4) {
 }
 
 // Problem 6
-document.querySelectoorAll('img').forEach(img => {
+document.querySelectorAll('img').forEach(img => {
   img.addEventListener('dblclick', function(){ 
     console.log(this.alt); 
   }); 
