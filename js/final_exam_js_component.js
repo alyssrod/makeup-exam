@@ -20,6 +20,7 @@ document.addEventListen('DOMContentLoaded', function(){
 document.querySelector('h1').addEventListener('click', function(){ 
   this.style.color = 'blue'; 
   this.style.fontSize = '50px';
+}); 
 
 // Problem 3
 // Part 1
