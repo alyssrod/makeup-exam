@@ -24,7 +24,6 @@
     grid-column: 2 / span 2;
   }
 }
-
 a[href="#maincontent"]:focus {
   position: fixed; 
   top: 10px; 
@@ -34,4 +33,24 @@ a[href="#maincontent"]:focus {
   padding: 10px; 
   border: 2px solid black; 
   z-index: 1000; 
+}
+
+/* Problem 3 */
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(4, 20%); 
+  }
+
+  .container > :nth-child(odd) {
+    grid-column: 1 / span 2; 
+  }
+
+  .container > :nth-child(even) {
+    grid-column: 2 / span 2; 
+  }
+
+  .container {
+    column-gap: 0px;
+    row-gap: 0px;
+  }
 }
