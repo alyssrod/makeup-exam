@@ -24,15 +24,20 @@ document.querySelector('h1').addEventListener('click', function(){
 
 // Problem 3
 // Part 1
-
+const firstFigureCaption = document.querySelector('figure figcaption');
+firstFigureCaption.addEventListener('mouseover', function() {
+    this.style.border = 'thick solid blue';
+});
 
 // Problem 3
 // Part 2
-
+firstFigureCaption.addEventListener('mouseout', function() {
+    this.style.border = 'none';
+});
 
 
 // Problem 4
-document.querySelector('button').addEventListener('click', function() {
+document.querySelector('#styleAll').addEventListener('click', function() {
     document.querySelector('.container').classList.add('style_all');
 });
 
@@ -44,8 +49,8 @@ if (images.length >= 4) {
 }
 
 // Problem 6
-document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('dblclick', function(){ 
-    console.log(this.alt); 
-  }); 
-}); 
+document.querySelectorAll('img').forEach(function(img) {
+    img.addEventListener('dblclick', function() {
+        console.log(this.alt);
+    });
+});
